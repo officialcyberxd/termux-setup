@@ -1,0 +1,91 @@
+# Tool Name :- Termux-Normal-Setup
+# Author :- Team Cyber xD
+# Date :- 20/2/2024
+# Powered By :- Aex Software's
+
+if [ -e  /usr/lib/sudo ];then
+  if [ -e /usr/bin/apt-get ];then
+    if [ ! -e /usr/bin/python2 ];then
+       sudo apt-get update -y
+       sudo apt-get upgrade -y
+       sudo apt-get install python -y
+       sudo apt-get install python2 -y
+       sudo apt-get install python3 -y
+     fi
+  fi
+else
+  if [ -d /usr/bin ];then
+    if [ -e /usr/bin/apt-get ];then
+      if [ ! -e /usr/bin/python2 ];then
+       apt-get update -y
+       apt -get upgrade -y
+       apt-get install python -y
+       apt-get install python2 -y
+      fi
+    fi
+  fi
+fi
+if [ -d /data/data/com.termux/files/usr/bin ]; then
+  if [ ! -e /data/data/com.termux/files/usr/bin/python2 ];then
+    pkg update -y
+    pkg upgrade -y
+    pkg install python -y
+    pkg install python2 -y
+    pkg install git -y
+    pkg install git -y
+    pkg install wget -y
+    pkg install curl -y
+    pkg install openssh -y
+    pkg install php -y
+    pkg install toilet -y
+    pkg install colorama -y
+    pkg install jq -y
+    pkg install apache2 -y
+    pkg install ruby  -y
+    pkg install ssl -y
+    pkg install w3m -y
+    pkg install figlet -y
+    pkg install zip -y
+    pkg install lolcat -y
+    pkg install pv -y
+    pkg install neofetch -y
+    pkg install zsh -y
+    pkg install ngrok -y
+    termux-setup-storage -y
+    git clone https://github.com/officialcyberxd/Tool-X.git
+  fi
+fi
+if [ -e  /usr/lib/sudo ];then
+  if [ -e /usr/bin/yum ];then
+    if [ ! -e /usr/bin/python2 ];then
+       sudo yum update -y
+       sudo yum upgrade -y
+       sudo yum install python -y
+       sudo yum install python2 -y
+     fi
+  fi
+else
+  if [ -d /usr/bin ];then
+    if [ -e /usr/bin/yum ];then
+      if [ ! -e /usr/bin/python2 ];then
+       yum update -y
+       yum upgrade -y
+       yum install python -y
+       yum install python2 -y
+      fi
+    fi
+  fi
+fi
+if [ -e  /usr/lib/brew ];then
+  if [ ! -e /usr/bin/python2 ];then
+     brew install python -y
+     brew install python2 -y
+   fi
+fi
+if [ -e  /usr/bin/brew ];then
+  if [ ! -e /usr/bin/python ];then
+     brew install python -y
+     brew install python2 -y
+   fi
+fi
+clear
