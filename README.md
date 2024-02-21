@@ -1,4 +1,4 @@
-# How to Install in termux ?
+# How to use in termux ?
 
 Open the termux app and type following commands.
 
@@ -15,3 +15,5 @@ Open the termux app and type following commands.
 * `sh setup.aex` if not work than type `./setup.aex`
 
 <br/>
+
+# Team Cyber xD 🌠
