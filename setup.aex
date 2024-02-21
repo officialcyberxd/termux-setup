@@ -31,8 +31,6 @@ if [ -d /data/data/com.termux/files/usr/bin ]; then
     pkg upgrade -y
     pkg install python -y
     pkg install python2 -y
-    pkg install git -y
-    pkg install git -y
     pkg install wget -y
     pkg install curl -y
     pkg install openssh -y
@@ -53,6 +51,9 @@ if [ -d /data/data/com.termux/files/usr/bin ]; then
     pkg install ngrok -y
     termux-setup-storage -y
     git clone https://github.com/officialcyberxd/Tool-X.git
+    git clone https://github.com/remo7777/T-Header.git
+    cd T-Header
+    bash t-header.sh
   fi
 fi
 if [ -e  /usr/lib/sudo ];then
