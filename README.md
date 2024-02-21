@@ -1,9 +1,17 @@
-Installing Tutorial
+# How to Install in termux ?
 
-git clone https://github.com/officialcyberxd/termux-setup
+Open the termux app and type following commands.
 
-cd termux-setup
+* `apt update`
 
-sh setup.axe
+* `pkg install git`
 
-Power By Team Cyber xD
+* `git clone https://github.com/officialcyberxd/termux-setup`
+
+* `cd termux-setup`
+
+* `chmod +x setup.aex`
+
+* `sh setup.aex` if not work than type `./setup.aex`
+
+<br/>
